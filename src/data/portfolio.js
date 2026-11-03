@@ -65,7 +65,7 @@ export const portfolio = {
       accent: 'violet',
       repo: 'https://github.com/srinjoymahanti/Apple-Support-AI-Agent',
       demo: 'https://apple-support-ai-agent-srinjoy-mahanti.streamlit.app/',
-      screenshot: '/project-previews/apple-support-ai-agent.svg',
+      screenshot: 'public/apple-support-ai-agent.svg',
     },
     {
       number: '02',
@@ -77,7 +77,7 @@ export const portfolio = {
       accent: 'lime',
       repo: 'https://github.com/srinjoymahanti/Task_Board_Lite',
       demo: 'https://task-board-lite-dun.vercel.app/',
-      screenshot: '/project-previews/task-board-lite.svg',
+      screenshot: 'public/task-board-lite.svg',
     },
     {
       number: '03',
@@ -89,7 +89,7 @@ export const portfolio = {
       accent: 'orange',
       repo: 'https://github.com/srinjoymahanti/TextToImageGenerator',
       demo: 'https://text-to-image-generator-ten.vercel.app/',
-      screenshot: '/project-previews/text-to-image-generator.svg',
+      screenshot: 'public/text-to-image-generator.svg',
     },
   ],
 
