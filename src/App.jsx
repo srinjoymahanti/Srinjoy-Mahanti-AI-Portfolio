@@ -501,6 +501,7 @@ function AskAI() {
     setConnectionError('');
     try {
       const apiBase = (import.meta.env.VITE_API_BASE_URL || '').trim().replace(/\/+$/, '');
+      console.log('API BASE URL:', apiBase);
       const response = await fetch(`${apiBase}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
