@@ -337,7 +337,9 @@ function LeetCodePanel() {
         if (username) params.set('username', username);
         if (refreshKey > 0) params.set('refresh', '1');
         const query = params.toString() ? `?${params.toString()}` : '';
-        const response = await fetch(`/api/leetcode${query}`, { headers: { Accept: 'application/json' } });
+        const apiBase = (import.meta.env.VITE_API_BASE_URL || '').trim().replace(/\/+$/, '');
+
+        const response = await fetch(`${apiBase}/api/leetcode${query}`,{headers: {Accept: 'application/json'}});
         const contentType = response.headers.get('content-type') || '';
         if (!contentType.toLowerCase().includes('application/json')) throw new Error('The LeetCode endpoint did not return JSON. Check that the Express server is running.');
         const body = await response.json();
